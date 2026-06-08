@@ -14,7 +14,7 @@ This repository contains my 12-week project-based web development journey.
 
 | Week | Project | Status |
 |--------|---------|---------|
-| 1 | Comming Soon | 🔒 |
+| 1 | Tech Blog Layout | 🔃 |
 | 2 | Comming Soon | 🔒 |
 | 3 | Coming Soon | 🔒 |
 | 4 | Coming Soon | 🔒 |
