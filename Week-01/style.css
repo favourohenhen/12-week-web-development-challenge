@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -11,10 +13,11 @@
     --footer-bg: #0a2540;
     --nav-hover: #dedbfc;
 }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   font-family: 'Roboto', sans-serif;
-  
+  background-color: var(--container);
+
 }
 
 /* Header styling */
@@ -28,7 +31,7 @@ header {
 .logo a{
   text-decoration: none;
   font-weight: bold;
-  color: #333;
+  color: var(--logo);
 }
 /* Nav sits naturally in the MIDDLE — no flex growing needed */
 nav {
@@ -78,26 +81,85 @@ button {
 }
 
 /* Hero */
-.hero{
+/* .hero{
     display: flex;
     flex-direction: column;
     padding-left:5em;
      max-width: 400px;
     min-width:200px;
-    
-
 }
 .trending{
-   /* border: 2px black solid; */
-    justify-content: space-around;
+   
+    justify-content: center;
     display: flex;
     align-items: center;
+    background-color: var(--card-bg);
+    width: 80%;
+    margin: 20px auto;
 }
-.article-img{
+.article-img img{
     border: 2px black solid;
+   
     gap: 2em;
+   
+   overflow: hidden;
+   object-position: center;
 }
 article{
-    
+   gap: 2em;  
     max-width: 400px;
+    padding: 2em;
+    
+} */
+.hero{
+padding: 2em;
+text-align: end;
+}
+.trending{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-bg);
+  width: 80%;
+  margin: 20px auto;
+}
+article{
+  padding: 2em;
+}
+.article-img img{
+
+  /* width: 100%; */
+  overflow: hidden;
+  object-position: center;
+
+}
+
+/* BLOG CONTAINER */
+/* Step 1 — turn on grid and set up columns */
+.gallery {
+  display: grid;
+ grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 2em; /* space between each photo card */
+  padding: 20px; /* breathing room around the whole gallery */
+  
+}
+
+/* Step 3 — style the inner content area */
+.gallery-content {
+  width: 100%;
+  height: 100%;
+}
+.email-news{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+align-items: center;
+padding: 10em;
+background-color: var(--logo);
+color: white;
+
+}
+.subscribe{
+  padding: 10px;
+  text-align: center;
 }
